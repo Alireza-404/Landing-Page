@@ -13,7 +13,7 @@ const ContactForm = () => {
   const [check, setCheck] = useState<boolean>(false);
 
   const handleChange = (
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = event.target;
 
@@ -34,11 +34,14 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col gap-y-1.5">
-        <label className="text-white font-medium">Name</label>
+        <label htmlFor="name" className="text-white font-medium">
+          Name
+        </label>
         <input
           value={field.name}
           name={"name"}
           type="text"
+          id="name"
           className="px-4 py-2 rounded-md border border-[#242424] focus:border-[#53db78] transition
           duration-200 text-[#aaa] font-medium outline-none"
           required
@@ -50,11 +53,14 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-y-1.5">
-        <label className="text-white font-medium">Email</label>
+        <label htmlFor="email" className="text-white font-medium">
+          Email
+        </label>
         <input
           value={field.email}
           name={"email"}
           type="email"
+          id="email"
           className="px-4 py-2 rounded-md border border-[#242424] focus:border-[#53db78] transition
           duration-200 text-[#aaa] font-medium outline-none"
           required
@@ -63,10 +69,13 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-y-1.5">
-        <label className="text-white font-medium">Message</label>
+        <label htmlFor="message" className="text-white font-medium">
+          Message
+        </label>
         <textarea
           value={field.message}
           name={"message"}
+          id="message"
           rows={15}
           className="textarea-scroll px-4 py-2 rounded-md border border-[#242424] focus:border-[#53db78] transition
           duration-200 text-[#aaa] font-medium outline-none resize-none bg-clip-padding"

@@ -9,12 +9,12 @@ const ContactAccordion = () => {
   const [openId, setOpenId] = useState<number | null>(null);
   return (
     <div className="flex flex-col gap-y-5">
-      {ContactAccordionData.map((item, index) => {
+      {ContactAccordionData.map((item) => {
         const isOpen = openId === item.id;
 
         return (
           <div
-            key={index}
+            key={item.id}
             className="border border-[#242424] rounded-lg overflow-hidden"
           >
             <button

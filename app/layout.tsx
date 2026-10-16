@@ -5,17 +5,19 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Signal-Guard-Website",
   description:
-    "Signal-Guard-Website is a multi-section single-page website with a unique and visually striking design. It focuses on aesthetics and user experience, featuring elements and animations rarely seen on typical websites. The project is primarily frontend and does not include complex logic or backend functionality.",
+    "Signal-Guard-Website is a multi-section single-page website with a unique and visually striking design. It focuses on aesthetics, user experience, and immersive animations.",
 };
 
 export default function RootLayout({
@@ -25,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased bg-[#000d01] overflow-x-hidden select`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#000d01] overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>

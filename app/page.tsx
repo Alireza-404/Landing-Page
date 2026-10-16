@@ -1,12 +1,13 @@
-import Navbar from "@/components/Navbar/Navbar";
-import ParticlesBackground from "@/components/ParticlesBackground/ParticlesBackground";
 import { LuCircleCheck } from "react-icons/lu";
 import { SVGData } from "@/data/SVGData";
+import { HowItWorkData } from "@/data/HowItWorkData";
+import { AutomateProtectionData } from "@/data/AutomateProtectionData";
+
+import Navbar from "@/components/Navbar/Navbar";
+import ParticlesBackground from "@/components/ParticlesBackground/ParticlesBackground";
 import ScrollRevealText from "@/components/ScrollRevealText/ScrollRevealText";
 import GlowBox from "@/components/GlowBox/GlowBox";
 import Aos from "@/components/Aos/Aos";
-import { AutomateProtectionData } from "@/data/AutomateProtectionData";
-import { HowItWorkData } from "@/data/HowItWorkData";
 import SecondaryButton from "@/components/SecondaryButton/SecondaryButton";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 import CapabilitiesBoxes from "@/components/CapabilitiesBoxes(lg)/CapabilitiesBoxes(lg)";
@@ -349,8 +350,8 @@ export default function Home() {
                             item.id === 1
                               ? "w-60 xs:w-82 md:w-2/3"
                               : item.id === 2
-                              ? "w-full md:flex md:items-center md:pr-5"
-                              : "w-60 h-50 scale-200 md:scale-250"
+                                ? "w-full md:flex md:items-center md:pr-5"
+                                : "w-60 h-50 scale-200 md:scale-250"
                           } $`}
                         >
                           <img

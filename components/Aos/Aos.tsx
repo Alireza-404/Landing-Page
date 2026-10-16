@@ -6,8 +6,19 @@ import "aos/dist/aos.css";
 
 const Aos = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-    AOS.init({ duration: 800, once: true });
+    AOS.init({
+      duration: 600,
+      once: true,
+      easing: "ease-out",
+      offset: 80,
+      disable: () =>
+        typeof window !== "undefined" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    });
+
+    return () => {
+      AOS.refreshHard();
+    };
   }, []);
 
   return null;
