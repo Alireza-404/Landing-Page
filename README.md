@@ -1,4 +1,4 @@
-# 🛡 Signal-Guard-Website
+# 🛡 Landing Page
 
 A modern and **visually rich multi-section website** built with **Next.js, TypeScript, Framer Motion, AOS, React-Scroll, and React-Icons**.  
 This project focuses on **clean component architecture, advanced UI effects, and smooth animations**.  
