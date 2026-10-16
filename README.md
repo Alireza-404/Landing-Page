@@ -8,8 +8,7 @@ It’s designed to stand out visually — something not often seen in standard w
 
 ## 🌟 Overview
 
-Signal-Guard-Website demonstrates how to build a **highly componentized, modular frontend** with attention to detail.  
-It features multiple sections with unique designs and animations, showcasing the **power of modern frontend technologies** without relying on backend logic.
+This landing page demonstrates how to build a **highly componentized and modular frontend** with meticulous attention to detail. It features multiple sections with distinctive designs, smooth animations, and engaging interactions, showcasing the **power of modern frontend technologies** without relying on complex backend logic.
 
 > The goal of this project is to highlight **component-driven design, UI/UX finesse, and animation skills** for web development.
 
@@ -42,7 +41,7 @@ It features multiple sections with unique designs and animations, showcasing the
 ## 🧭 Project Structure
 
 ```
-Signal-Guard-Website/
+Landing-Page/
 │
 ├── .next/
 ├── app/
@@ -77,7 +76,7 @@ Signal-Guard-Website/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/Alireza-404/Signal-Guard-Website.git
+git clone https://github.com/Alireza-404/Landing-Page.git
 ```
 
 ### 2️⃣ Install dependencies
@@ -109,7 +108,7 @@ yarn dev
 ## 🚀 Deployment
 
 This project is deployed on **Vercel** for instant preview and live testing.
-You can access the live website here: [Signal-Guard-Website Live](https://signal-guard-website-z404z.vercel.app)
+You can access the live website here: [Landing-Page Live](https://landing-page-404.vercel.app)
 
 Vercel handles **automatic builds** from the GitHub repository, so every push to the `main` branch updates the live site instantly.
 
